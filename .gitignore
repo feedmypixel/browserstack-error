@@ -1,0 +1,7 @@
+.vscode
+.idea
+.server
+node_modules
+.envrc
+coverage
+log

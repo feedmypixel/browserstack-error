@@ -1,0 +1,23 @@
+{
+  "name": "percy-try",
+  "version": "0.1.0",
+  "description": "A simple percy set up repo to show the bug seen in browserstack-node-sdk",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=\"--experimental-vm-modules\" TZ=UTC jest --colors --coverage --verbose",
+    "postinstall": "npm update browserstack-node-sdk",
+    "test:browserstack": "browserstack-node-sdk jest"
+  },
+  "keywords": [
+    "bug",
+    "browserstack-node-sdk"
+  ],
+  "author": "ben",
+  "devDependencies": {
+    "browserstack-node-sdk": "1.35.6",
+    "jest": "29.7.0"
+  },
+  "dependencies": {
+    "@jest/globals": "29.7.0"
+  }
+}
